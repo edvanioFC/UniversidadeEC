@@ -10,7 +10,7 @@ This README file provides an overview of the project and guides you on how to vi
 - `index.html`: The main HTML file containing the structure and content of the website.
 - `Paginas sobre, contato, blog, cursos, termos`: Where you find the related topics.
 - `css/style.css`: The CSS file for styling the website.
-- `js`: The JavaScript code for any interactive elements or functionality was used internally.
+- `js`: The JavaScript code for any interactive elements or functionality was used externally.
 - `imagens/`: A directory to store image files used in the project.
 - `icons/` : A directory to store all the icons used in the project.
 
@@ -38,7 +38,7 @@ Este arquivo README fornece uma visão geral do projeto e orienta você sobre co
 - `index.html`: O arquivo HTML principal que contém a estrutura e o conteúdo do site.
 - `Paginas sobre, contato, blog, cursos, termos`: Onde aparecem os conteudos relacionados aos temas.
 - `css/style.css`: O arquivo CSS para estilizar o site.
-- `js: O código JavaScript para qualquer elemento interativo ou funcionalidade foi usado internamente.
+- `js`: O código JavaScript para qualquer elemento interativo ou funcionalidade foi usado externamente num arquivo index.js.
 - `imagens/`: Um diretório para armazenar os arquivos de imagem utilizados no projeto.
 - `icons/` : Um diretório para armazenar todos os ícones usados no projeto.
 

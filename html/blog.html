@@ -8,6 +8,17 @@
     <link rel="icon" href="file:///home/edvanio/Documetos/IHM_Projeto/imagens/logo-mobile1.png">
     <title>Blog Universidade EC</title>
     <link rel="stylesheet" href="../css/style.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GY9CXHPKF3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GY9CXHPKF3');
+</script>
+
 </head>
 
 <body>
@@ -79,10 +90,11 @@
 
             <div class="caixa-com">
                 <h3>Deixe um comentário</h3>
-                <form class="comment-form">
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="E-mail">
-                    <textarea name="" id="" rows="6" placeholder="Seu comentário"></textarea>
+                <form class="comment-form" onsubmit="return validarFormulario()">
+                    <input type="text" id="nome" placeholder="Nome" >
+                    <input type="email" id="email" placeholder="E-mail" >
+                    <input type="text" id="assunto" placeholder="Assunto" >
+                    <textarea name="" id="comentarios" rows="6" placeholder="Seu comentário"></textarea>
                     <button class="hero-btn azul-btn" type="submit">ENVIAR COMENTÁRIO</button>
                 </form>
             </div>
@@ -312,33 +324,7 @@
 
 </footer>
 
-    <!----JavaScript -->
-    <script>
-        var menu = document.getElementById("menu");
-        
-        function showMenu() {
-            menu.style.right = "0";
-        }
-
-        function hideMenu() {
-            menu.style.right = "-200px";
-
-        }
-        
-        var btn = document.getElementById("btn-topo");
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                btn.style.display = "block";
-            } else {
-                btn.style.display = "none";
-            } 
-        }
-
-        function backToTopo() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+<script src="../javascript/index.js"></script>
 
 </body>
 
